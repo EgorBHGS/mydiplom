@@ -1,72 +1,195 @@
-/* Reset default browser styles */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
 
-/* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+    background-image: url(https://fen-shuj.ru/wp-content/uploads/a/a/1/aa14e39f98cc70c548645d334e00ef6c.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center center;
+    background-attachment: fixed;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    background-color: #666;
-    padding: 10px;
-    text-align: center;
+.header-line {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #fff;
+.nav-item {
+    color: white;
     text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 30px;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+.welcome-block {
+    color: white;
     text-align: center;
 }
 
-/* Additional styles */
-h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
+.welcome-block a {
+    color: black;
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    color: white;
+    justify-content: center;
 }
 
-p {
-    margin-bottom: 10px;
+img {
+    max-width: 800px;
 }
 
-ul {
-    margin-bottom: 10px;
+h3 {
+    color: white;
 }
 
 li {
-    margin-bottom: 5px;
+    color: white;
+}
+
+a {
+    color: white;
+}
+  
+.bands {
+    color: white;
+    text-align: center;
+}
+
+.bands h2 {
+    margin-bottom: 20px;
+}
+
+.bands ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.bands li {
+    color: white;
+}
+
+.bands img {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.bands p {
+    margin-bottom: 20px;
+}
+
+.track-list {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+
+@media only screen and (max-width: 767px) {
+.header-line {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.phone-holder {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.welcome-block, .bands {
+    text-align: center;
+}
+
+.bands img {
+    max-width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+.container {
+    padding: 40px;
+}
+
+.header-line {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav {
+    margin-top: 0;
+    text-align: right;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.phone-holder {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+.container {
+    padding: 60px;
+}
+
+.header-line {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav {
+    margin-top: 0;
+    text-align: right;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.phone-holder {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0;
+    }
 }

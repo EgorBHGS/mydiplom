@@ -2,36 +2,137 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Extrem Music World - Альбомы</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="/js/script.js"></script>
 </head>
 <body>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Heavy Music World</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<header>
-    <h1>Welcome to the Heavy Music World</h1>
-</header>
+    <div class="header">
+        <div class="container">
+            <div class="header-line">
+                
+                <div class="header-logo">
+                    <img src="Images/logo.png">
+                </div>
+                
+                <div class="nav">
+                    <a class="nav-item" href="index.html">Главная</a>
+                    <a class="nav-item" href="bands.html">Группы</a>
+                    <a class="nav-item active" href="albums.html">Альбомы</a>
+                </div>
+            
+            </div>
+            
+            <div id="albums">
+                <ul id="album-list">
+                    <h2>Альбомы</h2>
+                        <input type="text" id="search-input" placeholder="Введите название" oninput="searchAlbum()">
 
-<nav>
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="bands.html">Bands</a></li>
-        <li><a href="albums.html">Albums</a></li>
-        <li><a href="concerts.html">Concerts</a></li>
-        <li><a href="merchandise.html">Merchandise</a></li>
-    </ul>
-</nav>
+                    <li>
+                        <h3>The Crossed - The Producer Of Suffering</h3>
+                        <img src="https://images.genius.com/442c24d93c82b78ad2ebd7750eb59db9.1000x1000x1.png">
+                        <ul class="track-list">
+                            <li>1. Rip My Skin 03:41</li>
+                            <li>2. The Producer of Suffering 03:32</li>
+                            <li>3. Two-Faced Bitch 03:49 </li>
+                            <li>4. Horns in the Dark ft. Evgeny Sergeev from Promises Betrayed 03:18</li>
+                            <li>5. Resist the Doppelganger 03:25</li>
+                            <li>6. Paranoid Delusion 03:35</li>
+                            <li>7. Tranquility 01:57</li>
+                            <li>8. Expecting 03:29</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <h3>Slaughter For The Daddy - Medeiros</h3>
+                        <img src="https://sun9-24.userapi.com/impg/TqrKuCHXwkEjFtJBaj3MX7iiqhJh0eWh-yF5bg/gP0rqpRZWJg.jpg?size=807x807&quality=96&sign=ae60baa1d4cd093a98efde78648bb645&c_uniq_tag=ms96r-RtrpGubPwbt5RivyUmJSeRFu21h3HC-4Iej8Q&type=album">
+                        <ul class="track-list">
+                            <li>1. Intro 01:59</li>
+                            <li>2. Depth Charge 05:24</li>
+                            <li>3. Pt.1 See the light 00:53</li>
+                            <li>4. Maria 04:49</li>
+                            <li>5. Your Kain 06:03</li>
+                            <li>6. Palace Of Tongues 05:22</li>
+                            <li>7. Pt.2 He's gone 01:26</li>
+                            <li>8. Scream of Sons 03:25</li>
+                            <li>9. Scarecrow's Fetus 05:28</li>
+                            <li>10. Ragged Sky 04:00</li>
+                            <li>11. Agonal Revelation 06:21</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <h3>Sin Deliverance - Ultimate Hatred</h3>
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/dc/9f/cf/dc9fcf8b-17b8-3266-ef19-8a6e9c5fbc37/859747617718_cover.jpg/1200x1200bf-60.jpg">
+                        <ul class="track-list">
+                            <li>1. The Gates Of Sinners 00:57</li>
+                            <li>2. The Kingdom Of Pain 04:34</li>
+                            <li>3. Death Is Near 05:45</li>
+                            <li>4. Devastated Soul 04:51</li>
+                            <li>5. Eternal Suffering 05:05</li>
+                            <li>6. Another World 05:28</li>
+                            <li>7. Ultimate Hatred 05:03</li>
+                            <li>8. Step Into The Abyss 05:00</li>
+                            <li>9. Animal Instinct 05:12</li>
+                            <li>10. Denying God 05:00</li>
+                            <li>11. Inverted Cross 05:37</li>
+                            <li>12. Final Sin 01:13</li>
+                        </ul>
+                    </li>
 
+                    <li>
+                        <h3>Abominable Putridity - Parasitic Metamorphosis Manifestation</h3>
+                        <img src="https://sun9-16.userapi.com/impg/CZpfC6Bu-7QjAYWjWjsPJsSuA95ndPg1u5Fzkw/r1ZCGQwMsWE.jpg?size=807x807&quality=95&sign=b2fb99fc03977fd551f3b8f2a95919b3&c_uniq_tag=0vp1Ko8FT0ioUX03ckBe3WtZoydTpWLtU0s5WHU1uDY&type=album">
+                        <ul class="track-list">
+                            <li>1. Transcending Into Orbital Solitude 01:11</li>
+                            <li>2. Supreme Void 02:56</li>
+                            <li>3. Obscure Entity Of Darkness 02:43</li>
+                            <li>4. Superior Extradimensional Decimation 03:03</li>
+                            <li>5. Non Infinite Sequence 02:50</li>
+                            <li>6. Paroxysm 03:38</li>
+                            <li>7. Inorganic Infusion Protocol 02:49</li>
+                            <li>8. Parasitic Metamorphosis Manifestation 02:40</li>
+                            <li>9. Macrocosmic Cessation 02:55</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <h3>7 H.Target - Yantra Creating</h3>
+                        <img src="https://cs14.pikabu.ru/post_img/big/2023/02/25/11/167735373316232093.jpg">
+                        <ul class="track-list">
+                            <li>1. Aghori 03:52</li>
+                            <li>2. Askeza 06:41</li>
+                            <li>3. Shiva Yajur Mantra 03:27</li>
+                            <li>4. Brahmastra 05:01</li>
+                            <li>5. Creating Gods Arms 05:14</li>
+                            <li>6. Fire and Places for His Work 06:34</li>
+                            <li>7.Meditation 04:27</li>
+                        </ul>
+                    </li>
 
+                    <li>
+                        <h3>ByoNoiseGenerator - Turbulent Biogenesis</h3>
+                        <img src="https://ir.ozone.ru/s3/multimedia-8/c1000/6823236464.jpg">
+                        <ul class="track-list">
+                            <li>1. MendeleevJungleMoves 00:53</li>
+                            <li>2. Morse-autism 01:28</li>
+                            <li>3. MaxC7H5N3O6ThornyTune 01:16</li>
+                            <li>4. CatalyzedSickbolism 01:31</li>
+                            <li>5. C17H21NO2StringsTheory 01:19</li>
+                            <li>6. (CH3)3C6H9Perturbations 01:07</li>
+                            <li>7. TurbulentBiogenesis 01:50</li>
+                            <li>8. 8HertzRadioJerks 01:34</li>
+                            <li>9. BrownNotesFocusedPower 01:24</li>
+                            <li>10. PhotosyntheticIsomeria 02:41</li>
+                        </ul>
+                    </li>
 
-<footer>
-    <p>&copy; 2022 Heavy Music World. All rights reserved.</p>
-</footer>
-</body>
-</html>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
